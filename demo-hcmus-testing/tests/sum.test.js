@@ -20,11 +20,11 @@ describe("sum(int, int)", () => {
   });
 });
 
-describe("sum(int, string)", () => {
-  it("string should cast to int ", () => {
-    expect(sum(2, "3")).toBe(5);
-  });
-});
+// describe("sum(int, string)", () => {
+//   it("string should cast to int ", () => {
+//     expect(sum(2, "3")).toBe(5);
+//   });
+// });
 
 describe("sum(int, string)", () => {
   it("string should cast to int ", () => {
