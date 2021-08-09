@@ -54,7 +54,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{steps.buildx.outputs.name}}
           push: true
-          tags: ${{secrets.DOCERHUB_USERNAME}}/hcmus-dmeo-testing-cicd
+          tags: ${{secrets.DOCERHUB_USERNAME}}/hcmus-demo-testing-cicd:${{env.BRANCH}}
 
       - name: Verify
         run: echo ${{steps.docker_build.outputs.digest}}
