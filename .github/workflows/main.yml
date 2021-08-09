@@ -54,7 +54,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{steps.buildx.outputs.name}}
           push: true
-          tags: snowdence/hcmus-demo-testing-cicd:${{env.BRANCH}}
+          tags: snowdence/demo-cicd:lastest
 
       - name: Verify
         run: echo ${{steps.docker_build.outputs.digest}}
