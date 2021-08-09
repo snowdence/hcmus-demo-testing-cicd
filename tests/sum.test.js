@@ -20,7 +20,7 @@ describe("sum(int, int)", () => {
   });
 });
 
-describe("sum_version_2(int, string) -> 3", () => {
+describe("Dev sum_version_2(int, string) -> 3", () => {
   it("string should cast to int ", () => {
     expect(sum_version_2(2, "1")).toBe(3);
   });
