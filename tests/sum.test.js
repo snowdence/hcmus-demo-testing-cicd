@@ -20,13 +20,13 @@ describe("sum(int, int)", () => {
   });
 });
 
-describe("sum(int, string) -> 3", () => {
+describe("sum_version_2(int, string) -> 3", () => {
   it("string should cast to int ", () => {
-    expect(sum(2, "1")).toBe(3);
+    expect(sum_version_2(2, "1")).toBe(3);
   });
 });
 
-describe("sum(int, string)", () => {
+describe("sum_version_2(int, string)", () => {
   it("string should cast to int ", () => {
     expect(sum_version_2(2, "3")).toBe(5);
   });
